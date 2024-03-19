@@ -44,6 +44,8 @@ h1 {
 }
 
 .rules-btn{
+    height: 30px;
+    width: 130px;
     position: absolute;
     top: 30px;
     left: 30px;
