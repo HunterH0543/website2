@@ -1,1 +1,5 @@
-show = document.querySelector('btn')
+show = document.querySelector('.btn')
+
+show.addEventListener('click', () =>{
+    
+})
