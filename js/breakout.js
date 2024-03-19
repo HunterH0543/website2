@@ -1,0 +1,1 @@
+show = document.querySelector('btn')
