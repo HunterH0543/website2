@@ -104,8 +104,9 @@ function movePaddle() {
     paddle.x = paddle.x + paddle.dx
 }
 
-function keyDown() {
-    
+//Keydown Event
+function keyDown(e) {
+    console.log(e.key)
 }
 //Keyboard Event Handlers
 document.addEventListener('keydown', keyDown)
