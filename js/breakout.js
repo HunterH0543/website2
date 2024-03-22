@@ -110,15 +110,22 @@ function keyDown(e) {
 if (e.key == 'ArrowRight' || e.key == 'Right') {
     paddle.dx = paddle.speed
 }
+}
+
+function keyDown(e) {
+    if (e.key == 'ArrowLeft' || e.key == 'Left') {
+        paddle.dx = -paddle.speed
+    }
+    }
 //Keyup Event
 
 function keyUp(e) {
-    if (e.key == 'ArrowRight' || e.key =='Right') {
+    if (e.key == 'ArrowRight' || e.key =='Right' || e.key == 'ArrowLeft' || e.key == 'Left') {
         paddle.dx = 0
     }
 }
 
-}
+
 //Keyboard Event Handlers
 document.addEventListener('keydown', keyDown)
 document.addEventListener('keyup', keyUp)
