@@ -101,8 +101,10 @@ function draw () {
 
 //Move Paddle On Canvas
 function movePaddle() {
-
+    paddle.x = paddle.x + paddle.dx
 }
+
+
 
 //Update the Canvas Drawing and do the Animation
 function update () {
