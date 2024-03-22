@@ -98,11 +98,14 @@ function draw () {
     drawScore()
     drawBricks()
 }
-
+//Update the Canvas Drawing and do the Animation
 function update () {
+    movepaddle()
     draw()
     requestAnimationFrame(update)
 }
+
+update()
 
 // rules page open and close event handlers
 show.addEventListener('click', () =>{
