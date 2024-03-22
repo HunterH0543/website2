@@ -99,8 +99,10 @@ function draw () {
     drawBricks()
 }
 
-draw()
-
+function update () {
+    draw()
+    requestAnimationFrame(update)
+}
 
 // rules page open and close event handlers
 show.addEventListener('click', () =>{
