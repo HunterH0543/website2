@@ -89,6 +89,7 @@ function drawBricks() {
     })
 }
 
+console.log(bricks)
 //draw everything
 
 function draw () {
