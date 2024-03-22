@@ -110,10 +110,18 @@ function keyDown(e) {
 if (e.key == 'ArrowRight' || e.key == 'Right') {
     paddle.dx = paddle.speed
 }
+//Keyup Event
+
+function keyUp(e) {
+    if (e.key == 'ArrowRight' || e.key =='Right') {
+        paddle.dx = 0
+    }
+}
 
 }
 //Keyboard Event Handlers
 document.addEventListener('keydown', keyDown)
+document.addEventListener('keyup', keyUp)
 
 //Update the Canvas Drawing and do the Animation
 function update () {
