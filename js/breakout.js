@@ -157,6 +157,22 @@ function moveBall() {
     if(ball.x + ball.size < 0){
         ball.dx = -1 * ball.dx
     }
+        //Paddle Collision
+        if(ball.x - ball.size > paddle.x && ball.x + ball.size < paddle.x + paddle.w && ball.y + ball.size > paddle.y){
+            ball.dy = -1 * ball.dy
+        }
+    //Brick Collision
+    bricks.forEach(column => {
+        column.forEach(brick => {
+            if (brick.visible) {
+                if( ball.x - ball.size > brick.x && //left of brick
+                    ball.x + ball.size < brick.x + brick.w && //right of brick
+                    ball.y - ball.size < brick.y + brick.h){//bottom of brick
+                    ball.dy = -1 * ball.dybrick.visible = false
+                    }
+                }
+            })
+        })
 }
 //Update the Canvas Drawing and do the Animation
 function update () {
