@@ -177,6 +177,11 @@ function moveBall() {
             })
         })
 }
+
+//increases score
+function increaseScore() {
+    score++
+}
 //Update the Canvas Drawing and do the Animation
 function update () {
     moveBall()
