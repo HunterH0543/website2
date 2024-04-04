@@ -198,7 +198,7 @@ function showAllBricks() {
 }
 //Update the Canvas Drawing and do the Animation
 function update () {
-    moveBall()
+    // moveBall()
     movePaddle()
     draw()
     requestAnimationFrame(update)
