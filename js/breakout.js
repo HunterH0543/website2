@@ -180,7 +180,7 @@ function moveBall() {
             })
         })
 }
-vis
+
 //increases score
 function increaseScore() {
     score++
