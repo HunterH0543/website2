@@ -192,9 +192,11 @@ function increaseScore() {
 }
 
 function showAllBricks() {
-    bricks.forEach(brick => {
+    bricks.forEach(column => {
+        column.forEach(brick =>{
         brick.visible = true
     })
+})
 }
 //Update the Canvas Drawing and do the Animation
 function update () {
