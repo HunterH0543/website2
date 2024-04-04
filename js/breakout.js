@@ -207,7 +207,6 @@ function update () {
     requestAnimationFrame(update)
 }
 
-update()
 
 // rules page open and close event handlers
 show.addEventListener('click', () =>{
@@ -219,5 +218,5 @@ close.addEventListener('click', () =>{
 })
 
 start.addEventListener('click', () => {
-    
+    update()
 })
