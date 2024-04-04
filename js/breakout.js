@@ -154,7 +154,6 @@ function moveBall() {
         ball.dy = -1 * ball.dy
         showAllBricks()
         score = 0
-        cancel(update)
     }
     // Wall Collision(left)
     if(ball.x + ball.size < 0){
@@ -189,6 +188,7 @@ function increaseScore() {
     if (score == brickRowCount * brickColumnCount){
         score = 0
     showAllBricks()
+    cancel(update)
     }
 }
 
