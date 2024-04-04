@@ -219,4 +219,5 @@ close.addEventListener('click', () =>{
 
 start.addEventListener('click', () => {
     update()
+    console.log(ball.dx, ball.dy)
 })
