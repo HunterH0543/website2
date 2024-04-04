@@ -218,6 +218,5 @@ close.addEventListener('click', () =>{
 })
 
 start.addEventListener('click', () => {
-update()
 
 })
