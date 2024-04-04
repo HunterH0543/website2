@@ -81,7 +81,7 @@ function drawBricks() {
         column.forEach(brick => {
             ctx.beginPath()
             ctx.rect(brick.x, brick.y, brick.w, brick.h)
-            ctx.fillStyle = brick.visisble ? '#79a4ed' : 'transparent'
+            ctx.fillStyle = brick.visible ? '#79a4ed' : 'transparent'
             ctx.fill()
             ctx.closePath()
 
@@ -180,7 +180,7 @@ function moveBall() {
             })
         })
 }
-
+vis
 //increases score
 function increaseScore() {
     score++
@@ -198,7 +198,7 @@ function showAllBricks() {
 }
 //Update the Canvas Drawing and do the Animation
 function update () {
-    // moveBall()
+    moveBall()
     movePaddle()
     draw()
     requestAnimationFrame(update)
