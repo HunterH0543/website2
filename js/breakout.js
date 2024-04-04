@@ -218,5 +218,6 @@ close.addEventListener('click', () =>{
 })
 
 start.addEventListener('click', () => {
-toggle.update()
+update()
+
 })
