@@ -2,7 +2,7 @@ show = document.querySelector('.rules-btn')
 close = document.getElementById('close-btn')
 canvas = document.getElementById('canvas')
 ctx = canvas.getContext('2d')
-
+start = document.getElementById('start-btn')
 score = 0
 
 brickRowCount = 9
@@ -215,4 +215,8 @@ show.addEventListener('click', () =>{
 
 close.addEventListener('click', () =>{
     rules.classList.remove('show')
+})
+
+start.addEventListener('click', () => {
+    
 })
