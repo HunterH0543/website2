@@ -40,6 +40,7 @@ brickInfo = {
     visible: true
 }
 
+
 //create bricks
 
 bricks = []
@@ -154,6 +155,7 @@ function moveBall() {
         ball.dy = -1 * ball.dy
         showAllBricks()
         score = 0
+        start.visibility = true
     }
     // Wall Collision(left)
     if(ball.x + ball.size < 0){
@@ -219,5 +221,5 @@ close.addEventListener('click', () =>{
 
 start.addEventListener('click', () => {
 update()
-
+visibility = false
 })
