@@ -3,6 +3,7 @@ close = document.getElementById('close-btn')
 canvas = document.getElementById('canvas')
 ctx = canvas.getContext('2d')
 start = document.getElementById('start-btn')
+startbtn = document.getElementById('start-btn').disabled = false
 score = 0
 
 brickRowCount = 9
@@ -155,7 +156,8 @@ function moveBall() {
         ball.dy = -1 * ball.dy
         showAllBricks()
         score = 0
-        start.visibility = true
+        startbtn = document.getElementById('start-btn').disabled = false
+        cancel(update)
     }
     // Wall Collision(left)
     if(ball.x + ball.size < 0){
@@ -170,7 +172,8 @@ function moveBall() {
         column.forEach(brick => {
             if (brick.visible) {
                 if( ball.x - ball.size > brick.x && //left of brick
-                    ball.x + ball.size < brick.x + brick.w && //right of brick
+                    ball.x + ball.size < brick.x + brick.w &&//top of brick
+                    ball.y + ball.size > brick.y && //right of brick
                     ball.y - ball.size < brick.y + brick.h)//bottom of brick
                     {
                     ball.dy = -1 * ball.dy
@@ -189,6 +192,7 @@ function increaseScore() {
 
     if (score == brickRowCount * brickColumnCount){
         score = 0
+    startbtn = document.getElementById('start-btn').disabled = false
     showAllBricks()
     cancel(update)
     }
@@ -221,5 +225,5 @@ close.addEventListener('click', () =>{
 
 start.addEventListener('click', () => {
 update()
-visibility = false
+document.getElementById("start-btn").disabled = true
 })
