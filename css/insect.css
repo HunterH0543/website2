@@ -26,6 +26,7 @@ object-fit: contain;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: margin 0.5s ease-in;
 }
 
 .btn {
