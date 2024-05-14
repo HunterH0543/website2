@@ -19,8 +19,7 @@ function displayWord() {
     <span class ="letter">
     ${correctLetters.includes(letter) ? letter : ''}
     </span>
-    ` ).join ( '')
+    ` ).join ('')`
 }
 
-`
 displayWord()
