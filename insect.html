@@ -7,49 +7,56 @@
     <link rel="stylesheet" href="css/insect.css">
 </head>
 <body>
-<div class="screen">
-    <h1>Catch The Insect</h1>
-    <button class="btn" id="start-btn">Play Game</button>
-</div>
+    <div class = "screen">
+        <h1>Catch The Insect</h1>
+        <button class = "btn" id = "start-btn">Play Game</button>
+    </div>
 
-<div class="screen">
-    <h1>What is your "favorite" insect?</h1>
-    <ul class="insects-list">
-        <li>
-            <button class="css/insect-choice-btn">
-                <p>FLY</p>
-                <img src="css/images/fly.png" alt="FLY">
-            </button>
-        </li>
-        <li>
-            <button class="insect-choice-btn">
-                <p>MOSQUITO</p>
-                <img src="css/images/mosquito.png" alt="MOSQUITO">
-            </button>
-        </li>
-        <li>
-            <button class="insect-choice-btn">
-                <p>SPIDER</p>
-                <img src="css/images/spider.png" alt="SPIDER">
-            </button>
-        </li>
-        <li>
-            <button class="insect-choice-btn">
-                <p>ROACH</p>
-                <img src="css/images/roach.png" alt="ROACH">
-            </button>
-        </li>
-    </ul>
-</div>
+    <div class = "screen">
+        <h1>What is your favorite insect?</h1>
+        <ul class = "insects-list">
+            <li>
+                <button class = "choose-insect-btn">
+                    <p>fly</p>
+                    <img src = "css/images/fly.png" alt = "fly">
+                </button>
+            </li><li>
+                <button class = "choose-insect-btn">
+                    <p>mosquito</p>
+                    <img src = "css/images/mosquito.png" alt = "mosquito">
+                </button>
+            </li>
+            <li>
+                <button class = "choose-insect-btn">
+                    <p>roach</p>
+                    <img src = "css/images/roach.png" alt = "roach">
+                </button>
+            </li>
+            <li>
+                <button class = "choose-insect-btn">
+                    <p>spider</p>
+                    <img src = "css/images/spider.png" alt = "spider">
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="screen game-container" id="game-container">
+        <h3 class="time" id="time">
+            time: 00:00</h3>
+            <h3 id="score" class="score">Score: 0</h3>
+        <h5 id="message" class="message">
+            Are you annoyed yet? <br>
+            You are playing an impossible game!!
+        </h5>
 
-<div class="screen game-container" id="game-container">
-<h3 class="time" id="time">TIME: 00:00</h3>
-<h3 class="score" id="score">SCORE: 0</h3>
-<h5 class="message" id="message">Are you bored yet? <br>
-There is no end.
-</h5>
-</div>
+        <h1 id="W" class="message">
+            You Win!!
+        </h1>
 
+        <h2 id="L" class="message">
+            You Lose!!
+        </h2>
+    </div>
 </body>
-<script src="js/insect.js"></script>
+<script src= "js/insect.js"></script>
 </html>
